@@ -1,0 +1,104 @@
+\documentclass[article,10pt]{article}
+\usepackage{xunicode,xltxtra,parskip} 	%other packages for formatting
+\usepackage{titlesec}					%custom \section
+\usepackage{fullpage}
+\usepackage{amssymb}
+\usepackage{fontawesome}
+\usepackage{hyperref}
+\usepackage[paperheight=13.75in,paperwidth=8.55in,margin=.5in,heightrounded]{geometry}
+
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[{\titlerule[1pt]}]
+\titlespacing{\section}{0pt}{0pt}{0pt}
+
+%%%
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[
+SmallCapsFont = Fontin-SmallCaps.otf,
+BoldFont = Fontin-Bold.otf,
+ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+%%%
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+\pagestyle{empty} % non-numbered pages
+
+%--------------------TITLE-------------
+\begin{center}
+	{\Huge \scshape {Prakhar Sinha}}\\
+	Portland, OR $\cdot$ prakhar1993 [at] gmail [dot] com $\cdot$ +1-503-734-5757 $\cdot$ \href{https://linkedin.com/in/prakhar-sinha/}{\faLinkedinSquare $\:$/prakhar-sinha}  $\cdot$ \href{https://github.com/prakharsinha}{\faGithubSquare $\:$/prakharsinha}\\
+\end{center}
+ 
+%--------------------SECTIONS-----------------------------------
+
+%Section: Work Experience
+\section{Work Experience}
+\begin{tabular}{r|p{17cm}}
+ \textbf{Present} & \textbf{Salesforce} \sl{Portland, OR} \\ 
+ \textbf{Jan \textquotesingle{}20} & \emph{Success Engineer, Tier 2}\\
+  & \footnotesize{Collaborate with global teams serving our Premier \& Premier+ customers in the AMER region, supporting the business intelligence software by Salesforce. Heavy involvement with R\&D and product teams to troubleshoot, identify, and correct any issues. 
+ \vspace{2mm}
+ \newline Primary focus is around troubleshooting and assisting customers with developing custom code, maintaining integration with the Salesforce Platform and complete implementation of Salesforce products. 
+ \newline Proactive liaison and focal point into Salesforce Technology and Product teams to address existing features \& technical hurdles. Developed technical expertise in assigned areas of Sales Cloud and Platform Cloud offerings. 
+\vspace{2mm}
+ \newline Provide expert level technical support to assigned Salesforce Mission Critical clients through exceptional analytical, troubleshooting and problem solving expertise related to Salesforce product implementations. 
+ \newline Managing partner expectation and handling escalations to maximize their sentiment and defining a resolution action plan. Build relationships with partners and account stakeholders to assist with business goals and priorities. 
+\vspace{2mm}
+ \newline Help clients achieve proficiency with the Salesforce environment by leveraging internal tools and upskill with best practices.
+ \newline Identify key industry business process areas for opportunity to use the Salesforce platform. Advocate for innovation and early adoption of platform capabilities
+ \vspace{2mm}
+ \newline Additional responsibilities include researching and curating internal Knowledge Base, public Knowledge Articles and the mentorship of fellow Support Agents. Actively maintaining and participating in role related training activities. Meet \& exceed KPIs across Global Support KPIs. 
+ \newline Participated in project initiatives that impact the global team. Attained four Cloud certifications. Engaged in feedback to help fellow Support Engineers grow. Collaborate with leadership to ensure understanding across the board. Actively participated in release readiness activities for the designated cloud.Promote new ideas for process improvements, playbooks, Knowledge Base.}\\\multicolumn{2}{c}{}\\
+
+ {Aug \textquotesingle{}17}& \textbf{IBM} \sl{Bangalore, IN} \\
+  {Aug \textquotesingle{}15}& \emph{Systems Engineer}\\
+  & \footnotesize{Part of the development team responsible for handling the Unix-to-Linux porting of an AT\&T Enterprise ticketing application, TOPAS. Responsible for converting and streamlining incoming support requests from multiple channels into tickets. Worked on 3rd party modules and ensured seamless integration with the application server.}\\
+\end{tabular}
+
+%Section: Education
+\section{Education}
+\begin{tabular}{r|p{17cm}}
+ Sept \textquotesingle{}19 & \textbf{Portland State University} \emph{Portland, OR} \\ 
+ Sept \textquotesingle{}17 & \emph{Master's in Computer Science, \textit{G.P.A: 3.67}}\\\multicolumn{2}{c}{} \\
+ May \textquotesingle{}15 & \textbf{Narsee Monjee Institute of Management Studies} \emph{Mumbai, IN} \\
+ Aug \textquotesingle{}11 & \emph{Bachelor's in Computer Science, \textit{G.P.A: 3.48}}\\%\multicolumn{2}{c}{}\\
+\end{tabular}
+
+
+%Section: Skills
+\section{Skills}
+\begin{tabular}{rl}
+	\textbf{Languages:}&Java, Python, C/C++, JavaScript, Scala, SQL, NoSQL\\
+	\textbf{Frameworks:}&Git, Android, Node.js, Express.js, React.js, MySQL, PostgreSQL, MongoDB, RESTful API’s \\
+\end{tabular}
+
+
+%Section: Projects
+\section{Projects}
+\begin{tabular}{r|p{17cm}}
+Sept \textquotesingle{}19 & \textbf{Movie Recommendation Systems} \sl{Python, Jupyter Notebooks} \\
+Mar \textquotesingle{}19 & \footnotesize{A comparative study on open source movie recommendation systems. Compared multiple implementations of collaborative filtering and content-based filtering engines on their recommendation index. Based on the results, developed an item based collaborative filtering recommendation model to improve the prediction depending on the user’s history. Compared the accuracy of the above model against my content-based recommendation model on the dataset from MovieLens.org.}\\ \multicolumn{2}{c}{}\\
+
+Mar \textquotesingle{}19 & \textbf{Minimum Spanning Trees} \sl{Java} \\
+Jan \textquotesingle{}19 & \footnotesize{A comparative study amongst Kruskal\textquotesingle{}s, Prim\textquotesingle{}s and Boruvka\textquotesingle{}s algorithms. Developed a framework to construct a Minimum Spanning Tree using the algorithms. Studied the efficiency and performance of the algorithms using different data sets.}\\ \multicolumn{2}{c}{} \\
+
+Dec \textquotesingle{}18 & \textbf{Deep Image Prior} \sl{Python} \\ 
+Sept \textquotesingle{}18 & \footnotesize{A technical study on Image restoration techniques without using CNN\textquotesingle{}s. Showed a randomly initialized neural network that is sufficient to capture low-level image statistics which can be used as a handcrafted prior with excellent results in standard inverse problems and invert deep neural representations to diagnose and restore images based on flash-no flash input pairs.}\\\multicolumn{2}{c}{}\\
+
+Jun \textquotesingle{}18 & \textbf{Simulator Scheduling} \sl{Python} \\
+Apr \textquotesingle{}18 & \footnotesize{A comprehensive study on process scheduling in a Linux operating system. Compared a few scheduling algorithms to the Completely Fair Scheduler used by the Linux kernel. Developed a framework to mimic a scheduler in the kernel to explore process scheduling in a multi programming operating system. }\\ \multicolumn{2}{c}{} \\
+
+Mar \textquotesingle{}18 & {\textbf{Sliding Tiles}} {\sl Android, Java}  \\
+Jan \textquotesingle{}18 & \footnotesize{Classic version of the n-Puzzle problem adapted for the Android platform. A single or double player format with a choice to form a 1-15 sequence or assemble equations, from a randomized puzzle set. This android application can be played against the inbuilt A.I or with a secondary device Bluetooth or Wi-Fi.}\\ \multicolumn{2}{c}{} \\
+
+Dec \textquotesingle{}17 & {\textbf{Baseball Library}} {\sl JavaScript, Express.js, Bootstrap, Postman}\\
+Sept \textquotesingle{}17 & \footnotesize{A web application that filters information about baseball players from an online repository. The mechanics of the application works with a mix of HTML, CSS, JavaScript at the front end and an Express.js server running behind. Interface styled using the Bootstrap framework. The request is filtered from a PostgreSQL database. The API\textquotesingle{}s were tested using Postman.}\\ \multicolumn{2}{c}{}\\
+
+
+&{\textbf{Other Projects}}\\
+&\footnotesize{\textbf{General Purpose Universal Kiosks}, case study on Interaction Design \textbf{(Jan ’18 - Mar ’18)}; \textbf{MovieGram}, Netflix, if it were on a private scale. An android application that streams files hosted from a personal server \textbf{(Sept ’14 - Apr ’15)}; \textbf{MyFilofax}, An android application keeps track of a student’s school work \textbf{(Sept ’13 - Jan ’14)}; \textbf{Snakes}, the classic arcade game, ported using C++ \textbf{(Jan ’12 - Mar ’12)}}\\\multicolumn{2}{c}{}\\
+
+\end{tabular}
+\end{document}
