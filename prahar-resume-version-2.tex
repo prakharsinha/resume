@@ -1,0 +1,190 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{prakhar-resume-version-2}
+\usepackage{fancyhdr}
+ \usepackage{ragged2e}
+ %\usepackage[paperheight=15in,paperwidth=9in,margin=0in]{geometry}
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Prakhar}{Sinha} { Portland, OR |
+\href{mailto:prakhar1993@gmail.com}{prakhar1993@gmail.com} | +1-503-734-5757 \\
+\urlstyle{same}Github: \href{https://github.com/prakhar-sinha}{\bf prakhar-sinha} |
+LinkedIn: \href{https://www.linkedin.com/in/prakhar-sinha}{\bf prakhar-sinha} \\
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Portland State University}
+\descript{Master's in Computer Science}
+\location{Dec 2019 | Portland, OR}
+\sectionsep
+
+\subsection{NMIMS University}
+\descript{Bachelor's in Computer Science}
+\location{May 2015 | Mumbai, IN}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+
+\subsection{Movie Recommendation Systems}
+\begin{justify}
+
+ \footnotesize{Conducted a study on open-source movie recommendation systems. Compared multiple implementations of collaborative filtering and content-based filtering engines on their recommendation index. Developed an item based collaborative filtering recommendation model to improve prediction depending on the user’s history. Compared the accuracy of the above model against my content-based recommendation model on the dataset from MovieLens.org.}
+\end{justify}
+\sectionsep
+
+\subsection{Minimum Spanning Trees}
+\begin{justify}
+
+\footnotesize{A comparative study amongst Kruskal's, Prim's and Boruvka's algorithms. Developed a framework to construct a Minimum Spanning Tree using the algorithms. Studied the efficiency and performance of the algorithms using different data sets.}
+\end{justify}
+\sectionsep
+
+\subsection{Uniprocessor}
+\begin{justify}
+
+\footnotesize{A comprehensive study on process scheduling in a Linux operating system. Compared a few scheduling algorithms to the Completely Fair Scheduler used by the Linux kernel. Developed a framework to mimic a scheduler in the kernel to explore process scheduling in a multi programming operating system.}
+\end{justify}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\location{\bf Languages: } 
+Java \textbullet{}  Python \textbullet{} C \textbullet{} C++ \textbullet{} SQL \textbullet{} HTML \textbullet{} CSS \textbullet{}Javascript Apex \textbullet{} Visualforce \textbullet{} SOQL \textbullet{} SOSL \\ 
+\location{\bf Frameworks:}
+Git \textbullet{}  Android SDK \textbullet{} Node,js \textbullet{} Express.js \textbullet{} Node.js \textbullet{} REST API \textbullet{} SOAP API \textbullet{} Postman  \textbullet{} MongoDb \textbullet{} Splunk \textbullet{} MySQL \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{Salesforce} \hspace{-4.5mm}
+\descript{| Software Engineer}
+\location{Jan 2020 - March 2023 | Portland, OR}
+\begin{itemize}
+\justifying
+\small{
+\item \textbf{Proactively} engaged with over \textbf{500+} partners in order to identify potential areas of improvement \& provide appropriate recommendations for Sales Cloud \& Platform Cloud offering. \textbf{Worked} closely with clients to understand their business requirements and provided solutions accordingly.
+\vspace{-1.5mm}
+\item \textbf{Developed} custom solutions using Apex \& Visualforce, Salesforce’s native language counterpart to Java, SQL, HTML CSS \& JavaScript. Crafted \textbf{10} user-interface components which quickly accelerated development time by \textbf{40\%}.
+\item  \textbf{Leveraged} technical knowledge to analyze \& resolve challenging Salesforce implementation issues for \textbf{110} Mission Critical clients, leading to \textbf{99\%} customer satisfaction with resolution time decreased by \textbf{15\%}.
+\vspace{-1.5mm}
+ \item \textbf{Established} collaborative relationships Product Teams \& Executive Management to address missing features \& technical hurdles\; alleviating backlogs by \textbf{35\%}.
+ \vspace{-1.5mm}
+ \item \textbf{Executed} sprints for feature development in Agile environment with extensive Scrum methodology to ensure deliverables met QA expectations. 
+ \vspace{-1.5mm}
+ \item \textbf{Triaged} more than 43 triggered Salesforce outages, decreasing denial-of-service to critical customers, resulting in \textbf{30\%} faster escalations resolution. \textbf{Served} as main point of contact for identifying, troubleshooting \& mitigating critical software issues, resulting in a \textbf{30\%} improvement in issue resolution times. 
+\vspace{-1.5mm}
+\item \textbf{Performed} extensive testing via Splunk to locate areas of improvement, strengthening system uptime by \textbf{15\%}.
+\vspace{-1.5mm}
+\item  \textbf{Enabled} over \textbf{100} automation use-cases using Process builders \& Flows, resulting in \textbf{30\%} process efficiencies across Salesforce \& released \textbf{200} hours of manual effort weekly.
+\vspace{-1.5mm}
+\item \textbf{Investigated \& resolved} over \textbf{500} intricate OAuth errors within specified customer cases, notably boosting customer loyalty. \textbf{Optimized \& identified} OAuth errors for multiple 3rd party applications within tight timetables, reducing support overhead by \textbf{30\%}.
+\vspace{-1.5mm}
+\item \textbf{Assimilated} \& maintained \textbf{108} Knowledge Base entries to ensure accurate and timely resolution, contributing to reduced case resolution time by \textbf{22\%}. Identified and curated over \textbf{500} Knowledge Base articles to increase customer success by \textbf{30\%}. Trained \textbf{100+} clients on best practice Salesforce use, boosting customer efficiency by \textbf{50\%}. 
+\vspace{-1.5mm}
+\item \textbf{Developed} REST \& SOAP APIs to connect customers to external applications. \textbf{Installed, configured \& tested} SFDC CLI increasing agility \& scalability of the backend by \textbf{70\%}. Optimized performance of all existing APIs resulting in a \textbf{20\%} reduction in call response latency.
+\vspace{-1.5mm}
+\item \textbf{Attained 6 Salesforce Cloud certifications.} Engaged in feedback to help fellow Support Engineers grow. Collaborated with leadership to ensure understanding across the board. Implemented internal tools that increased customer proficiency with the Salesforce platform by \textbf{40\%}. Actively participated in release readiness activities for the Sales cloud. Promoted new ideas for process improvements, playbooks, Knowledge Base.
+}
+\end{itemize}
+\sectionsep
+
+\runsubsection{IBM} \hspace{-4.5mm}
+\descript{| Software Engineer}
+\location{Sep 2015 - Aug 2017 | Bangalore, IN}
+\vspace{-1.5mm}
+\begin{itemize}
+\justifying
+\small{\item \textbf{Migrated} AT\&T\textquotesingle{s} legacy ticketing app, \textbf{TOPAS}, from Unix to Linux while conserving system integrity \& guaranteeing \textbf{87\%} uptime.
+\vspace{-1.5mm} 
+\item \textbf{Streamlined} multiple channels of incoming requests into a single integrated support model increasing customer satisfaction by \textbf{20\%.} Successfully handled \textbf{200} incoming support requests from various channels daily, enhancing performance \& efficiency of the application.
+\vspace{-1.5mm} 
+\item  \textbf{Ensured} seamless integration of \textbf{3rd}-party modules \& server, enabling TOPAS ticketing application to port from UNIX to Linux, resulting in quicker responses to customer tickets by \textbf{20\%;} improved work efficiency by \textbf{16\%}.
+\vspace{-1.5mm} 
+\item  \textbf{Improved} 2-year backlog of client requests in 8 weeks by coding an intuitive, 2-way system converting requests into tickets; \textbf{Increased} customer satisfaction rate by \textbf{15\%}.
+\vspace{-1.5mm} 
+\item \textbf{Reduced} ticket-opening time by \textbf{35\%} with seamless integration between 3rd Party modules \& TOPAS Application Server, supporting \textbf{200+} enterprise customers. \textbf{Mitigated} system instability through program tweaks that improved speed \& responsiveness, cutting response time for ticket resolutions by \textbf{25\%}.}
+\end{itemize}
+\sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
